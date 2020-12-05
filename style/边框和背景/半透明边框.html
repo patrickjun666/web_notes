@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .main {
+      width: 100%;
+      padding: 60px 80px 80px;
+      background-color: #b4a078;
+      box-sizing: border-box;
+    }
+    div.border {
+      padding: 12px;
+      margin: 20px auto;
+      background: white;
+      border: 10px solid hsla(0, 0%, 100%, .5);
+      background-clip: padding-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <input id="pb" type="checkbox" checked/>
+    <label for="pb">padding-box(默认)</label>
+    <div class="border">这是一个半透明的边框 hhhhhhhhhh^_^</div>
+  </div>
+</body>
+</html>

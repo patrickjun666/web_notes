@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .main {
+      width: 100%;
+      padding: 80px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .progress-outer {
+      width: 60%;
+      height: 12px;
+      overflow: hidden;
+      position: relative;
+    }
+    .progress-enter {
+      height: inherit;
+      background: rgba(180, 160, 120, .2);
+    }
+    .progress-bg {
+      width: 60%;
+      height: inherit;
+      border-radius: 6px;
+      background: repeating-linear-gradient(-45deg, #D9CFBB 25%, #C3B393 0, #C3B393 50%, #D9CFBB 0, #C3B393 75%, #C3B393 0);
+      background-size: 16px 16px;
+      animation: panoramic 20s linear infinite;
+    }
+    @keyframes panoramic {
+      to {
+        background-position: 200% 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="progress-outer">  <!--更好的扩展-->
+      <div class="progress-enter">
+        <div class="progress-bg"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
